@@ -20,7 +20,7 @@ export const Route = createFileRoute("/settings")({
       },
     ],
   }),
-  component: SettingsPage;
+  component: SettingsPage,
 });
 
 const PREFS_KEY = "ent.prefs.v1";
