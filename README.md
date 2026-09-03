@@ -1,727 +1,359 @@
-# AI Productivity Hub
+# Easy Note Taker (ENT)
 
-BUILD PROMPT: EASY NOTE TAKER (ENT)
+> **Capture It. Plan It. Get It Done.**
 
-Build a complete, modern, responsive AI-powered productivity web application called:
+Easy Note Taker (ENT) is an AI-powered productivity web application designed to help students and professionals organise information, manage tasks, plan their time, conduct research, and improve workplace communication.
 
-Easy Note Taker (ENT)
+The application combines multiple AI-powered tools into one simple and professional productivity platform.
 
-Slogan:
-“Capture It. Plan It. Get It Done.”
+---
 
-The application is designed to help students and professionals manage workplace and study-related productivity tasks using AI.
+## Project Overview
 
-IMPORTANT DEVELOPMENT INSTRUCTION:
+Easy Note Taker was developed to address common productivity challenges faced by students and professionals, including:
 
-Do not create a planning document or explain how the application could be built. Actually develop and implement the working web application based on the specifications below.
+* Managing multiple tasks and deadlines
+* Organising meeting information
+* Writing professional emails
+* Conducting research efficiently
+* Prioritising daily activities
+* Accessing an AI assistant for productivity support
 
-The application must have a polished, professional SaaS-style interface and all major buttons, navigation items, forms and AI features should be functional.
+ENT provides a centralised dashboard where users can access AI-powered tools to capture information, organise their workload and improve productivity.
 
-1. CORE PURPOSE
+The application follows a simple workflow:
 
-Easy Note Taker is an AI productivity assistant that allows users to:
+**Input → AI Processing → Review → Edit → Use**
 
-Generate professional emails
+The system is designed to support users rather than replace human decision-making. Users remain responsible for reviewing and verifying AI-generated information.
 
-Summarise meeting notes
+---
 
-Create and prioritise tasks
+## Features Implemented
 
-Generate daily and weekly schedules
+### 1. Smart Email Generator
 
-Research and summarise topics
+The Smart Email Generator helps users create professional emails using AI.
 
-Interact with an AI workplace/study assistant
+Users can provide:
 
-The application should reduce the amount of time users spend organising information, writing content, planning tasks and researching topics.
+* Email purpose
+* Topic
+* Key points
+* Preferred tone
+* Desired length
 
-2. REQUIRED AI FEATURES
+The AI generates a professional email that users can:
 
-Implement the following five AI-powered features.
+* Review
+* Edit
+* Copy
+* Regenerate
 
-A. Smart Email Generator
+---
 
-Create a page where the user can generate professional emails using AI.
+### 2. Meeting Notes Summarizer
 
-INPUTS:
+The Meeting Notes Summarizer converts unstructured meeting notes into an organised summary.
 
-Recipient/purpose
+The tool generates:
 
-Email topic
+* Meeting summary
+* Key discussion points
+* Decisions made
+* Action items
+* Deadlines
+* Follow-up activities
 
-Key points
+Users can edit, copy or regenerate the generated content.
 
-Tone selection:
+---
 
-Professional
+### 3. AI Task Planner / Scheduler
 
-Friendly
+The AI Task Planner helps users organise and prioritise their workload.
 
-Formal
+Users can create tasks containing:
 
-Apologetic
+* Task name
+* Description
+* Deadline
+* Estimated duration
+* Priority
+* Status
 
-Persuasive
+The AI can assist with:
 
-Length:
+* Task prioritisation
+* Identifying urgent tasks
+* Daily scheduling
+* Weekly scheduling
+* Time allocation
 
-Short
+Tasks can be marked as:
 
-Medium
+* Not Started
+* In Progress
+* Completed
 
-Detailed
+---
 
-OUTPUT:
+### 4. AI Research Assistant
 
-Generate a complete professional email.
+The AI Research Assistant helps users explore topics and generate structured research insights.
 
-The generated email must appear in an editable text area.
+Users enter a research topic or question and can receive:
 
-Include buttons for:
+* Topic overview
+* Key concepts
+* Key findings
+* Advantages
+* Disadvantages
+* Insights
+* Recommendations
+* Further research areas
 
-Copy
+AI-generated research should be reviewed and verified using reliable sources before being used academically or professionally.
 
-Edit
+---
 
-Regenerate
+### 5. ENT AI Assistant
 
-Clear
+ENT Assistant is an interactive AI chatbot designed to support users with productivity-related activities.
 
-B. Meeting Notes Summarizer
+Users can ask questions such as:
 
-Create a tool where users can paste meeting notes or upload/paste meeting information.
+* How should I prioritise my tasks?
+* Help me prepare for a meeting.
+* Help me write a professional email.
+* Summarise these notes.
+* Explain this topic in simple terms.
 
-The AI should transform unstructured meeting notes into:
+The chatbot provides an interactive conversation interface with AI-generated responses.
 
-Meeting summary
+---
 
-Key discussion points
+### 6. Productivity Dashboard
 
-Decisions made
+The dashboard provides an overview of the user's productivity.
 
-Action items
+It includes:
 
-Responsible person
+* Tasks Today
+* Completed Tasks
+* Pending Tasks
+* High Priority Tasks
+* Today's Tasks
+* Quick AI Actions
+* AI Productivity Insights
 
-Deadlines
+---
 
-Important follow-ups
+### 7. Responsive Design
 
-Use a clean structured output rather than displaying one large block of text.
+The application is designed to work across:
 
-Allow the user to:
+* Desktop
+* Laptop
+* Tablet
+* Mobile devices
 
-Edit the generated summary
+The sidebar adapts to smaller screens through a responsive navigation menu.
 
-Copy the result
+---
 
-Regenerate the result
+### 8. Responsible AI
 
-Clear the input
+Easy Note Taker includes responsible AI guidance to encourage users to review and verify AI-generated information.
 
-C. AI Task Planner / Scheduler
+The application communicates that:
 
-Create an AI-powered task planning system.
+* AI-generated content may contain errors.
+* Users should verify important information.
+* Users should maintain human oversight.
+* Confidential information should not be unnecessarily entered into AI tools.
+* AI should support human decision-making rather than replace it.
 
-Users should be able to enter tasks such as:
+---
 
-Task name
+# Technologies and Tools Used
 
-Description
+## Frontend
 
-Deadline
+* React
+* TypeScript
+* HTML5
+* CSS
+* Responsive UI components
 
-Estimated duration
+## AI
 
-Priority
+* AI-powered text generation
+* AI-powered summarisation
+* AI-powered task prioritisation
+* AI-powered research assistance
+* AI chatbot functionality
 
-Category
+## Development Tools
 
-The AI should:
+* Lovable AI
+* GitHub
+* Git
+* Visual Studio Code
 
-Prioritise tasks
+## Design
 
-Identify urgent tasks
+* Responsive SaaS dashboard design
+* Black, green, yellow and white colour theme
+* Modern card-based interface
+* Responsive sidebar navigation
 
-Organise tasks logically
+---
 
-Create a daily schedule
+# Getting Started
 
-Create a weekly schedule
+## Prerequisites
 
-Suggest realistic time allocations
+Before running the project locally, make sure you have the following installed:
 
-Provide two views:
+* Node.js
+* npm
+* Git
 
-Daily Planner
+You will also need any required AI API credentials configured through environment variables if the deployed version requires an external AI service.
 
-and
+---
 
-Weekly Planner
+## Installation
 
-Use visual task cards showing:
+### 1. Clone the repository
 
-Task
+```bash
+git clone https://github.com/YOUR-USERNAME/easy-note-taker.git
+```
 
-Priority
+### 2. Navigate into the project directory
 
-Deadline
+```bash
+cd easy-note-taker
+```
 
-Estimated time
+### 3. Install dependencies
 
-Status
+```bash
+npm install
+```
 
-Priority levels should include:
+### 4. Configure environment variables
 
-High
-
-Medium
-
-Low
-
-Allow tasks to be marked as:
-
-Not Started
-
-In Progress
-
-Completed
-
-3. AI RESEARCH ASSISTANT
-
-Create an AI Research Assistant page.
-
-The user should be able to enter a research topic or question.
+If the project requires an AI API, create a `.env` file in the project root and add the required environment variables.
 
 Example:
 
-“What are the benefits of artificial intelligence in business?”
+```env
+VITE_AI_API_KEY=your_api_key_here
+```
 
-The AI should provide:
+**Do not commit API keys, passwords, tokens or other sensitive credentials to GitHub.**
 
-Topic overview
+Make sure `.env` is included in `.gitignore`.
 
-Key findings
+---
 
-Important concepts
+### 5. Start the development server
 
-Advantages
-
-Disadvantages
-
-Recommendations
-
-Suggested areas for further research
-
-Allow the user to select the desired response length:
-
-Brief
-
-Standard
-
-Detailed
-
-The output must be editable and copyable.
-
-Include a clear notice that AI-generated research should be verified against reliable sources before being used academically or professionally.
-
-4. AI CHATBOT INTERFACE
-
-Create an interactive AI assistant called:
-
-ENT Assistant
-
-The chatbot should act as a workplace and productivity assistant.
-
-Users should be able to ask questions such as:
-
-“Help me organise my tasks for today.”
-
-“Summarise this information.”
-
-“Help me write a professional message.”
-
-“What should I prioritise first?”
-
-“Help me prepare for my meeting.”
-
-“Explain this topic simply.”
-
-The interface should resemble a modern AI chat application.
-
-Include:
-
-Chat history
-
-User messages
-
-AI responses
-
-Text input
-
-Send button
-
-Clear conversation button
-
-The assistant should provide helpful, concise and professional responses.
-
-5. DASHBOARD
-
-Create a main dashboard that appears after the user enters the application.
-
-The dashboard should display:
-
-Welcome section
-
-“Welcome back to Easy Note Taker”
-
-Include the slogan:
-
-Capture It. Plan It. Get It Done.
-
-Productivity Overview
-
-Show cards for:
-
-Tasks Today
-
-Completed Tasks
-
-Pending Tasks
-
-High Priority Tasks
-
-Quick Actions
-
-Create buttons/cards for:
-
-Generate Email
-
-Summarise Meeting
-
-Plan My Day
-
-Research Topic
-
-Ask ENT Assistant
-
-Today's Tasks
-
-Display the user's current tasks with:
-
-Task name
-
-Priority
-
-Deadline
-
-Status
-
-Productivity Insight
-
-Include an AI-generated productivity suggestion based on the user's tasks.
-
-6. SIDEBAR NAVIGATION
-
-Create a professional sidebar navigation.
-
-Include:
-
-ENT Logo
-
-Easy Note Taker
-
-Navigation:
-
-Dashboard
-
-Email Generator
-
-Meeting Summarizer
-
-Task Planner
-
-Research Assistant
-
-ENT Assistant
-
-My Tasks
-
-Settings
-
-At the bottom include:
-
-Help
-
-Responsible AI
-
-The sidebar should collapse on mobile.
-
-7. RESPONSIVE DESIGN
-
-The application must work properly on:
-
-Desktop
-
-Laptop
-
-Tablet
-
-Mobile
-
-On desktop:
-
-Use a sidebar + main content layout.
-
-On mobile:
-
-The sidebar should transform into a mobile navigation menu.
-
-Cards, forms, tables and AI outputs must resize appropriately.
-
-8. DESIGN SYSTEM
-
-Use a modern SaaS dashboard aesthetic.
-
-PRIMARY THEME COLOURS:
-
-Black
-
-Green
-
-Yellow
-
-White
-
-Use these colours professionally rather than overwhelming the interface.
-
-Suggested visual direction:
-
-Black/dark sections for navigation
-
-White/light backgrounds for content
-
-Green for primary actions and positive productivity indicators
-
-Yellow for highlights, warnings and important priorities
-
-Use clean typography, rounded cards, subtle shadows and modern spacing.
-
-The interface should feel:
-
-Professional
-
-Modern
-
-Clean
-
-Intelligent
-
-Energetic
-
-Easy to use
-
-Avoid making it look childish or overly colourful.
-
-9. LOGO AND BRANDING
-
-Create a cool, modern logo for:
-
-ENT
-
-with the full brand name:
-
-Easy Note Taker
-
-The logo should visually communicate:
-
-Productivity
-
-Notes
-
-Organisation
-
-Artificial intelligence
-
-Use the brand colours:
-
-Black, green, yellow and white.
-
-The logo should appear in the sidebar and on the login/home interface.
-
-10. INPUT AND OUTPUT DESIGN
-
-Every AI feature must clearly separate:
-
-INPUT
-
-What the user provides.
-
-from
-
-AI OUTPUT
-
-What the system generates.
-
-Use cards or panels to make this distinction obvious.
-
-AI outputs should be:
-
-Editable
-
-Copyable
-
-Regeneratable
-
-Easy to read
-
-Use loading indicators while AI responses are being generated.
-
-Include useful empty states when there is no information available.
-
-11. RESPONSIBLE AI
-
-Include a dedicated Responsible AI section.
-
-Display a visible disclaimer:
-
-“AI-generated content may contain errors or incomplete information. Users should review, verify and edit AI-generated outputs before relying on them for important academic, professional or business decisions.”
-
-Also include responsible AI principles such as:
-
-Human oversight
-
-Verify important information
-
-Protect personal and confidential information
-
-Do not blindly rely on AI-generated content
-
-Review AI outputs before sharing
-
-Do not present AI-generated information as guaranteed to be correct.
-
-12. USER EXPERIENCE
-
-The application should have intuitive navigation.
-
-A user should be able to understand what each feature does without needing instructions.
-
-Use:
-
-Clear headings
-
-Helpful placeholder text
-
-Tooltips where appropriate
-
-Empty states
-
-Loading states
-
-Success messages
-
-Error messages
-
-Confirmation messages
-
-Make the workflow simple:
-
-Input → AI Processing → Review → Edit → Use/Copy
-
-13. SAMPLE DATA
-
-Populate the dashboard with realistic sample data so that the application does not look empty when first opened.
-
-Example tasks:
-
-Complete project proposal
-
-Attend team meeting
-
-Submit research assignment
-
-Respond to emails
-
-Prepare presentation
-
-Use realistic deadlines and priorities.
-
-The user should be able to add, edit, complete and delete tasks.
-
-14. FUNCTIONAL REQUIREMENTS
-
-Implement functional interactions wherever possible.
-
-Required functionality includes:
-
-Navigation between pages
-
-Task creation
-
-Task editing
-
-Task completion
-
-Task deletion
-
-Priority selection
-
-Deadline selection
-
-AI input forms
-
-AI output display
-
-Copy output
-
-Edit output
-
-Regenerate output
-
-Clear input
-
-Chat interaction
-
-Responsive mobile navigation
-
-Do not create buttons that appear functional but do nothing.
-
-Where a real AI API is required, structure the application so that the AI integration can be connected through a secure API/service rather than exposing API keys in the frontend.
-
-15. SECURITY AND PRIVACY
-
-Do not expose API keys or secret credentials in frontend code.
-
-Do not request unnecessary personal information.
-
-Avoid storing sensitive information unnecessarily.
-
-Include appropriate privacy-conscious messaging around AI tools.
-
-16. VISUAL HIERARCHY
-
-The Dashboard should be the central hub of the application.
-
-Use cards and sections to make the most important information immediately visible.
-
-Recommended hierarchy:
-
-Welcome message
-
-Productivity overview
-
-Quick AI tools
-
-Today's tasks
-
-AI productivity insight
-
-The design should make the application feel like a real commercial productivity SaaS platform rather than a basic student prototype.
-
-17. LANDING / LOGIN EXPERIENCE
-
-Create a polished initial screen for Easy Note Taker.
-
-Include:
-
-ENT
-
-Easy Note Taker
-
-“Capture It. Plan It. Get It Done.”
-
-Short description:
-
-“Your AI-powered productivity assistant for smarter notes, better planning and faster work.”
-
-Include a clear:
-
-Get Started
-
-button.
-
-If authentication is implemented, provide a simple professional login/signup experience.
-
-If authentication is not necessary for the prototype, allow the user to enter the application directly through the Get Started button.
-
-18. FINAL APPLICATION STRUCTURE
-
-The completed application should contain:
-
-Landing / Welcome
-
-Dashboard
-
-Smart Email Generator
-
-Meeting Notes Summarizer
-
-AI Task Planner
-
-AI Research Assistant
-
-ENT AI Chatbot
-
-My Tasks
-
-Settings
-
-Responsible AI
-
-19. QUALITY STANDARD
-
-The final result should look like a professionally designed AI SaaS product.
-
-Prioritise:
-
-Functional interactions
-
-Clean UI/UX
-
-Responsive design
-
-Consistent branding
-
-Clear information hierarchy
-
-Professional typography
-
-Useful AI workflows
-
-Good user experience
-
-Do not simply create static mock-up screens.
-
-Build the application so the major workflows can actually be demonstrated.
-
-The final product should clearly demonstrate at least three AI-powered features, but implement all five specified AI features.
-
-Brand: Easy Note Taker (ENT)
-
-Slogan: Capture It. Plan It. Get It Done.
-
-Theme: Black + Green + Yellow + White
-
-Primary goal: Help users capture information, organise tasks, plan their time, conduct research and communicate more effectively using AI.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/617ace2f-b92f-4235-9d59-bbe97118e627).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+The application should then be available through the local development URL provided by the terminal.
+
+---
+
+# Project Structure
+
+A simplified structure of the application is:
+
+```text
+easy-note-taker/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── hooks/
+│   ├── assets/
+│   └── App.*
+│
+├── .env
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
+```
+
+The exact structure may vary depending on the final implementation.
+
+---
+
+# Team Members
+
+### Project Team
+
+| Name              | Role           |
+| ----------------- | -------------- |
+| Kholiswa Dhladhla | Project Member |
+| Vussero           | Project Member |
+| Tabang            | Project Member |
+| Beil              | Project Member |
+| [Add Name]        | Project Member |
+
+> Update the team member names and roles above to match the final project team before submission.
+
+---
+
+# Project Objectives
+
+The main objectives of Easy Note Taker are to:
+
+1. Improve productivity through AI-assisted tools.
+2. Help users organise and prioritise tasks.
+3. Reduce the time required to create professional workplace communication.
+4. Convert unstructured meeting notes into useful information.
+5. Assist users with research and information gathering.
+6. Provide an interactive AI productivity assistant.
+7. Promote responsible and human-supervised use of AI.
+
+---
+
+# Responsible AI Notice
+
+Easy Note Taker uses artificial intelligence to generate, summarise and organise information.
+
+AI-generated content may contain inaccurate, incomplete or misleading information.
+
+Users should:
+
+* Review AI-generated outputs.
+* Verify important information using reliable sources.
+* Avoid entering confidential or sensitive information.
+* Apply human judgement before making important decisions.
+* Treat AI as an assistant rather than an authoritative source.
+
+---
+
+# Academic Project
+
+This application was developed as part of an academic project to demonstrate the practical application of artificial intelligence, prompt engineering, web application development and user-centred design.
+
+The project focuses on demonstrating how multiple AI capabilities can be integrated into a single productivity application.
+
+---
+
+# License
+
+This project was developed for academic and educational purposes.
+
+© 2026 Easy Note Taker (ENT)
