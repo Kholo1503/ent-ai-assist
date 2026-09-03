@@ -17,6 +17,7 @@ import { Route as HelpRouteImport } from './routes/help'
 import { Route as MeetingSummarizerRouteImport } from './routes/meeting-summarizer'
 import { Route as ResearchAssistantRouteImport } from './routes/research-assistant'
 import { Route as ResponsibleAiRouteImport } from './routes/responsible-ai'
+import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as TaskPlannerRouteImport } from './routes/task-planner'
 import { Route as TasksRouteImport } from './routes/tasks'
 
@@ -60,6 +61,11 @@ const ResponsibleAiRoute = ResponsibleAiRouteImport.update({
   path: '/responsible-ai',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TaskPlannerRoute = TaskPlannerRouteImport.update({
   id: '/task-planner',
   path: '/task-planner',
@@ -80,6 +86,7 @@ export interface FileRoutesByFullPath {
   '/meeting-summarizer': typeof MeetingSummarizerRoute
   '/research-assistant': typeof ResearchAssistantRoute
   '/responsible-ai': typeof ResponsibleAiRoute
+  '/settings': typeof SettingsRoute
   '/task-planner': typeof TaskPlannerRoute
   '/tasks': typeof TasksRoute
 }
@@ -92,6 +99,7 @@ export interface FileRoutesByTo {
   '/meeting-summarizer': typeof MeetingSummarizerRoute
   '/research-assistant': typeof ResearchAssistantRoute
   '/responsible-ai': typeof ResponsibleAiRoute
+  '/settings': typeof SettingsRoute
   '/task-planner': typeof TaskPlannerRoute
   '/tasks': typeof TasksRoute
 }
@@ -105,6 +113,7 @@ export interface FileRoutesById {
   '/meeting-summarizer': typeof MeetingSummarizerRoute
   '/research-assistant': typeof ResearchAssistantRoute
   '/responsible-ai': typeof ResponsibleAiRoute
+  '/settings': typeof SettingsRoute
   '/task-planner': typeof TaskPlannerRoute
   '/tasks': typeof TasksRoute
 }
@@ -119,6 +128,7 @@ export interface FileRouteTypes {
     | '/meeting-summarizer'
     | '/research-assistant'
     | '/responsible-ai'
+    | '/settings'
     | '/task-planner'
     | '/tasks'
   fileRoutesByTo: FileRoutesByTo
@@ -131,6 +141,7 @@ export interface FileRouteTypes {
     | '/meeting-summarizer'
     | '/research-assistant'
     | '/responsible-ai'
+    | '/settings'
     | '/task-planner'
     | '/tasks'
   id:
@@ -143,6 +154,7 @@ export interface FileRouteTypes {
     | '/meeting-summarizer'
     | '/research-assistant'
     | '/responsible-ai'
+    | '/settings'
     | '/task-planner'
     | '/tasks'
   fileRoutesById: FileRoutesById
@@ -156,6 +168,7 @@ export interface RootRouteChildren {
   MeetingSummarizerRoute: typeof MeetingSummarizerRoute
   ResearchAssistantRoute: typeof ResearchAssistantRoute
   ResponsibleAiRoute: typeof ResponsibleAiRoute
+  SettingsRoute: typeof SettingsRoute
   TaskPlannerRoute: typeof TaskPlannerRoute
   TasksRoute: typeof TasksRoute
 }
@@ -218,6 +231,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ResponsibleAiRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/task-planner': {
       id: '/task-planner'
       path: '/task-planner'
@@ -244,6 +264,7 @@ const rootRouteChildren: RootRouteChildren = {
   MeetingSummarizerRoute: MeetingSummarizerRoute,
   ResearchAssistantRoute: ResearchAssistantRoute,
   ResponsibleAiRoute: ResponsibleAiRoute,
+  SettingsRoute: SettingsRoute,
   TaskPlannerRoute: TaskPlannerRoute,
   TasksRoute: TasksRoute,
 }
